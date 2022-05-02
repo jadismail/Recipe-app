@@ -22,7 +22,7 @@ function getMealList() {
                     mealList += `<div class="card" id="${meal.idMeal}">
                     <img class="food-image" src="${meal.strMealThumb}" alt="A food image">
                     <h3 class="food-type">${meal.strMeal}</h3>
-                    <button class="recipe-btn"><a  href="#">Get Recipe</a></button>
+                    <button class="recipe-btn">Get Recipe</button>
                 </div>`
                 });
                 mealListEl.classList.remove("not-found");
