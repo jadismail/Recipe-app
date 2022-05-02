@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Water+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+:root {
+    --light-orange: #fd5d2d;
+    --dark-orange: #ff3600;
+    --secondary-blue: #2432b3;
+    --primary-blue: #00a1b3;
+    --dark-blue: #070f5a;
+    --dark-gray: #333;
+    --ligh-gray: #666;
+    --lightest-gray: #ddd;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    line-height: 1.5;
+    font-size: 1.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: var(--dark-blue);
+}
+
+header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.logo {
+    font-family: "Water Brush", cursive;
+    font-size: 3rem;
+    text-align: left;
+    padding: 1rem;
+    font-weight: 500;
+}
+
+.logo span {
+    color: var(--dark-orange);
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-box {
+    width: 300px;
+    padding: 0.3rem 0;
+    border-radius: 50px 0;
+    box-shadow: 2px 2px 5px 0 var(--secondary-blue);
+}
+
+.search-content {
+    width: 220px;
+    padding: 1rem;
+    border-radius: 50px 0;
+    border: 0;
+    font-size: 1.5rem;
+    color: var(--dark-blue);
+}
+
+.btn-search {
+    padding: 1rem;
+    transform: translateX(-0.44rem);
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+}
+
+.btn-search:hover {
+    color: var(--light-orange);
+}
+
+.fa-magnifying-glass {
+    transform: rotate(90deg);
+}
+
+blockquote {
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-style: italic;
+    text-align: right;
+    padding: 0 1rem;
+}
+
+cite {
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+/* main section */
+
+main {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.main-heading {
+    padding: 2rem;
+}
+
+.meal-results {
+    display: grid;
+    row-gap: 2rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.card {
+    border: 0px solid #070f5a;
+    width: 320px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 21px -8px rgba(0, 0, 0);
+}
+
+.food-image {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.recipe-btn {
+    padding: 1rem 2rem;
+    background-color: var(--dark-blue);
+    border: 0;
+    border-radius: 30px 0;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.recipe-btn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.recipe-btn:hover {
+    background-color: var(--dark-orange);
+}
+
+
+/* recipe details */
+
+.recipe-box {
+    display: none;
+}
+
+.recipe-details {
+    align-items: center;
+    background-color: var(--dark-orange);
+    border-radius: 5px;
+    color: var(--lightest-gray);
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    left: 50%;
+    overflow-y: auto;
+    padding: 2rem 1rem;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+.recipe-details .fa-circle-xmark {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.meal-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.meal-details .meal-title {
+    font-size: 3rem;
+}
+
+.meal-category {
+    background-color: var(--lightest-gray);
+    border-radius: 20px 0;
+    color: var(--dark-orange);
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+}
+
+.instruction-details h3 {
+    font-size: 2rem;
+}
+
+.instruction-details p {
+    letter-spacing: 1px;
+    padding: 1rem;
+    /* font-family: "Times New Roman", Times, serif; */
+}
+
+.recipe-details-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 1rem auto;
+}
+
+.video {
+    color: var(--lightest-gray);
+    font-size: 2rem;
+    font-family: "Lobster", cursive;
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+
+.video:hover {
+    color: var(--dark-blue);
+}
+
+.not-found {
+    font-size: 2rem;
+    color: var(--dark-orange);
+    font-weight: 500;
+}
+
+
+/* 
+  
+  
+  @media screen and (min-width: 768px) {
+    .gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .gallery {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .gallery img:nth-of-type(3) {
+      grid-column: 2 / 4;
+      grid-row: 1 / 3;
+    }
+  } */
