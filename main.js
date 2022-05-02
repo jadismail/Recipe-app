@@ -61,6 +61,7 @@ function mealRecipeModel(meal) {
     </div>
     <img class="recipe-details-image" src="${meal.strMealThumb}" alt="A food image">
     <a href="${meal.strYoutube}" target="_blank" class="video">Watch Video</a>
+    <a href="${meal.strSource}" class="recipe-website">For more details click here!</a>
     `;
 
     recipeDetialsEl.innerHTML = mealRecipe;

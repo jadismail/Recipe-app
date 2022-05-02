@@ -186,6 +186,11 @@ main {
 .fa-circle-xmark {
     font-weight: bold;
     cursor: pointer;
+    transition: color 0.2s linear;
+}
+
+.fa-circle-xmark:hover {
+    color: var(--dark-blue);
 }
 
 .meal-details-container {
@@ -238,10 +243,19 @@ main {
     font-size: 2rem;
     font-family: "Lobster", cursive;
     text-decoration: none;
-    transition: all 0.2s linear;
+    transition: color 0.2s linear;
 }
 
 .video:hover {
+    color: var(--dark-blue);
+}
+
+.recipe-website {
+    color: var(--lightest-gray);
+    transition: color 0.2s linear;
+}
+
+.recipe-website:hover {
     color: var(--dark-blue);
 }
 
