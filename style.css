@@ -154,10 +154,6 @@ main {
 
 /* recipe details */
 
-.recipe-box {
-    display: none;
-}
-
 .recipe-details {
     align-items: center;
     background-color: var(--dark-orange);
@@ -175,7 +171,12 @@ main {
     width: 90%;
 }
 
-.recipe-details .fa-circle-xmark {
+.recipe-details::-webkit-scrollbar {
+    background-color: var(--lightest-gray);
+    border-radius: 3px;
+}
+
+.fa-circle-xmark {
     position: absolute;
     right: 2rem;
     top: 2rem;
@@ -237,6 +238,10 @@ main {
     font-size: 2rem;
     color: var(--dark-orange);
     font-weight: 500;
+}
+
+.hide {
+    display: none;
 }
 
 
