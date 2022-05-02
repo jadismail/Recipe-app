@@ -127,8 +127,13 @@ main {
 .card {
     border: 0px solid #070f5a;
     width: 320px;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 4px 4px 21px -8px rgba(0, 0, 0);
+    transition: transform 0.2s ease-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .food-image {
